@@ -5,14 +5,47 @@
   <title>Contact</title>
   <link rel="stylesheet" href="css/index.css">
 </head>
-<body>
+<body style="background-image: url('large_000000.jpg'); background-size: cover;">
 <nav>
   <ul class="nav-menu">
     <li><a href="index.html">Головна</a></li>
     <li><a href="about.html">Про нас</a></li>
     <li><a href="services.html">Послуги</a></li>
     <li><a href="contact.html">Контакти</a></li>
+    <li><a href="Gallery.html">Галарея</a></li>
   </ul>
 </nav>
+<div class="container">
+  <div class="box">
+    <section id="contacts">
+      <h2>Контакти</h2>
+      <p>Якщо у вас є запитання або пропозиції, зв'яжіться з нами:</p>
+
+      <ul>
+        <li>📍 Адреса: вул. Мистецька, 10, Київ, Україна</li>
+        <li>📧 Email: info@art-history.com</li>
+        <li>📞 Телефон: +38 (555) 355-35-35</li>
+        <li>🔗 Соціальні мережи:
+          <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">YouTube</a>
+        </li>
+      </ul>
+
+      <h3>Форма зворотного зв’язку</h3>
+      <form action="submit_form.php" method="post">
+        <label for="name">Ім’я:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Повідомлення:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Надіслати</button>
+      </form>
+    </section>
+
+  </div>
+</div>
 </body>
 </html>

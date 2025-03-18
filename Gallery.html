@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="ImageFunc.js"></script>
+</head>
+<body style="background-image: url('large_000000.jpg'); background-size: cover;">
+<nav>
+  <ul class="nav-menu">
+    <li><a href="index.html">Головна</a></li>
+    <li><a href="about.html">Про нас</a></li>
+    <li><a href="services.html">Послуги</a></li>
+    <li><a href="contact.html">Контакти</a></li>
+    <li><a href="Gallery.html">Галарея</a></li>
+  </ul>
+</nav>
+<div class="container">
+  <div class="box">
+    <img src="1.jpeg" alt="Фото" width="1100" class="clickable" onclick="openModal(this.src)">
+    <img src="2.jpeg" alt="Фото" width="1100" class="clickable" onclick="openModal(this.src)">
+    <img src="3.webp" alt="Фото" width="1100" class="clickable" onclick="openModal(this.src)">
+    <img src="4.jpeg" alt="Фото" width="1100" class="clickable" onclick="openModal(this.src)">
+    <img src="5.jpeg" alt="Фото" width="1100" class="clickable" onclick="openModal(this.src)">
+    <img src="6.jpg" alt="Фото" width="1100" class="clickable" onclick="openModal(this.src)">
+    <div id="modal" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="full-img">
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
